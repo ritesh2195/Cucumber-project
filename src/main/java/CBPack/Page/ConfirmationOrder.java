@@ -15,7 +15,7 @@ import org.openqa.selenium.support.FindBy;
 	
 	this.driver=driver;	
 		
-	//PageFactory.initElements(driver, ConfirmationOrder.class);
+	//PageFactory.initElements(driver, this);
 	
 	}
 	
