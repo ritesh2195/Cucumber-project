@@ -21,7 +21,7 @@ import org.openqa.selenium.support.FindBy;
 		
 	this.driver=driver;
 	
-	//PageFactory.initElements(driver, SignInPage.class);
+	//PageFactory.initElements(driver, this);
 	
 	}
 	
