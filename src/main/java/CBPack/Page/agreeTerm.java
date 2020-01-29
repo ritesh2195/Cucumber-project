@@ -18,7 +18,7 @@ public class agreeTerm {
 			
 		this.driver=driver;	
 		
-		//PageFactory.initElements(driver, agreeTerm.class);
+		//PageFactory.initElements(driver, this);
 		
 		}
 		public void agreeTerm1() {
