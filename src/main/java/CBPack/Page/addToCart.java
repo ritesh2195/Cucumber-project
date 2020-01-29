@@ -28,7 +28,7 @@ import org.openqa.selenium.support.ui.Select;
 		
 	this.driver=driver;
 	
-	//PageFactory.initElements(driver, addToCart.class);
+	//PageFactory.initElements(driver, this);
 	
 	}
 	
