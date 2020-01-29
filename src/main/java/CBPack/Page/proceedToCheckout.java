@@ -18,7 +18,7 @@ import org.openqa.selenium.support.FindBy;
 		
 	this.driver=driver;	
 	
-	//PageFactory.initElements(driver, proceedToCheckout.class);
+	//PageFactory.initElements(driver, this);
 	
 	}
 	public void proceedCheckout() {
