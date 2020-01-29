@@ -18,7 +18,7 @@ import org.openqa.selenium.WebElement;
 		
 	this.driver=driver;	
 	
-	//PageFactory.initElements(driver, SearchIteam.class);
+	//PageFactory.initElements(driver, this);
 		
 	}
 	
