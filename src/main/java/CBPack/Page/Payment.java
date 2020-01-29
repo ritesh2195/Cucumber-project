@@ -18,7 +18,7 @@
 			
 		this.driver=driver;	
 		
-		//PageFactory.initElements(driver, Payment.class);
+		//PageFactory.initElements(driver, this);
 		
 		}
 		public void payment() {
