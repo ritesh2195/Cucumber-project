@@ -24,7 +24,7 @@ import org.openqa.selenium.support.FindBy;
 		
 	this.driver=driver;
 	
-	//PageFactory.initElements(driver, SelectItem.class);
+	//PageFactory.initElements(driver, this);
 	
 	}
 	
