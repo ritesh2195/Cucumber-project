@@ -24,7 +24,7 @@ import org.openqa.selenium.WebElement;
 		
 	this.driver=driver;	
 	
-	//PageFactory.initElements(driver, LaunchPage.class);
+	//PageFactory.initElements(driver, this);
 		
 	}
 	
