@@ -1,10 +1,10 @@
- package CBPack.Page;
+      package CBPack.Page;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+	import org.openqa.selenium.WebDriver;
+	import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.support.FindBy;
 
-public class agreeTerm {
+	public class agreeTerm {
 	
 		WebDriver driver;
 		
@@ -18,7 +18,7 @@ public class agreeTerm {
 			
 		this.driver=driver;	
 		
-		//PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this);
 		
 		}
 		public void agreeTerm1() {
