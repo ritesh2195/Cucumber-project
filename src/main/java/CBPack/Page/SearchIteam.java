@@ -1,7 +1,7 @@
  package CBPack.Page;
 
    import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+   import org.openqa.selenium.WebElement;
    import org.openqa.selenium.support.FindBy;
 	
 	public class SearchIteam {
@@ -18,7 +18,7 @@ import org.openqa.selenium.WebElement;
 		
 	this.driver=driver;	
 	
-	//PageFactory.initElements(driver, this);
+	PageFactory.initElements(driver, this);
 		
 	}
 	
