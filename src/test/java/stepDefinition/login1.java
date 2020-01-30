@@ -2,22 +2,22 @@
 
 	import org.junit.Assert;
 	import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
+	import org.openqa.selenium.JavascriptExecutor;
+	import org.openqa.selenium.WebElement;
+	import org.openqa.selenium.support.PageFactory;
 
-import Base.base;
-import CBPack.Page.ConfirmationOrder;
-import CBPack.Page.LaunchPage;
-import CBPack.Page.Payment;
-import CBPack.Page.SearchIteam;
+	import Base.base;
+	import CBPack.Page.ConfirmationOrder;
+	import CBPack.Page.LaunchPage;
+	import CBPack.Page.Payment;
+	import CBPack.Page.SearchIteam;
 	import CBPack.Page.SelectItem;
 	import CBPack.Page.SignInPage;
 	import CBPack.Page.addToCart;
-import CBPack.Page.agreeTerm;
-import CBPack.Page.proceedToCheckout;
-import CBPack.util.Constant;
-import cucumber.api.java.After;
+	import CBPack.Page.agreeTerm;
+	import CBPack.Page.proceedToCheckout;
+	import CBPack.util.Constant;
+	import cucumber.api.java.After;
 	import cucumber.api.java.Before;
 	import cucumber.api.java.en.And;
 	import cucumber.api.java.en.Given;
@@ -25,22 +25,13 @@ import cucumber.api.java.After;
 	import cucumber.api.java.en.When;
 	
 	public class login1 extends base {
-		
-//		public ExtentReports eReport;
-//		public ExtentTest eTest;
-	
+			
 	    @Before("@Login")
 	    public void openBroser() {
 	    	
 	    intilize();
-	    	
-//	    eReport=ExtentManager.getInstance();	
-//	    	
-//	    eTest=eReport.startTest("ECommerce");
 	    
 	    openingBrowser();
-	    
-	   // eTest.log(LogStatus.INFO, "Browser got opened");
 	     
 	    }
 	    	
@@ -49,13 +40,9 @@ import cucumber.api.java.After;
 		
 		LaunchPage launchPage=new LaunchPage(driver);
 		
-		PageFactory.initElements(driver, launchPage);
+		//PageFactory.initElements(driver, launchPage);
 		
 		launchPage.SingInPage(Constant.APP_URL);
-		
-		//eTest.log(LogStatus.INFO, "Application url got launched");
-			
-		//driver.get(prop.getProperty("AppURL"));
 		   
 		}
 		
@@ -64,19 +51,11 @@ import cucumber.api.java.After;
 			
 		SignInPage sininPage=new SignInPage(driver);
 			
-		PageFactory.initElements(driver, sininPage);
+		//PageFactory.initElements(driver, sininPage);
 			
 		sininPage.DoSignin(Constant.USERNAME,Constant.PASSWORD );
 		
-		//eTest.log(LogStatus.INFO, "Type username and password");
-		
 		Thread.sleep(5000);
-			
-//		driver.findElement(By.name("email")).sendKeys(prop.getProperty("username"));
-//		
-//		driver.findElement(By.id("passwd")).clear();
-//			
-//	    driver.findElement(By.id("passwd")).sendKeys(prop.getProperty("password"));	
 			
 		}
 
@@ -84,9 +63,7 @@ import cucumber.api.java.After;
 		public void i_click_on_Sign_in_button()  {
 			
 		driver.findElement(By.id("SubmitLogin")).click();
-		
-		//eTest.log(LogStatus.INFO, "click on Signin button");
-		
+			
 		}
 
 		@Then("^user should be abale to succefully Login$")
@@ -111,12 +88,10 @@ import cucumber.api.java.After;
 		
 		SearchIteam search=new SearchIteam(driver);
 			
-		PageFactory.initElements(driver, search);
+		//PageFactory.initElements(driver, search);
 			
 		search.searchItem("dress");
 			
-		//eTest.log(LogStatus.INFO, "Search dress in search box and click on search button");
-		
 		}
 		
 		@And("^I select the particular item and click on the particular item$")
@@ -124,11 +99,9 @@ import cucumber.api.java.After;
 			
 		SelectItem item=new SelectItem(driver);
 		
-		PageFactory.initElements(driver, item);
+		//PageFactory.initElements(driver, item);
 		
 		item.choosingItem();
-		
-		//eTest.log(LogStatus.INFO, "Choose the item");
 			
 		}
 		
@@ -137,9 +110,7 @@ import cucumber.api.java.After;
 			
 		addToCart cart=new addToCart(driver);
 			
-		PageFactory.initElements(driver, cart);
-		
-		//eTest.log(LogStatus.INFO, "Add the item into the cart");
+		//PageFactory.initElements(driver, cart);
 		
 		try {
 			
@@ -158,11 +129,9 @@ import cucumber.api.java.After;
 			
 		proceedToCheckout checkout=new proceedToCheckout(driver);
 		
-		PageFactory.initElements(driver, checkout);
+		//PageFactory.initElements(driver, checkout);
 		
 		checkout.proceedCheckout();
-		
-		//eTest.log(LogStatus.INFO, "click on the proceed the checkout button");
 			
 		}
 		
@@ -171,11 +140,9 @@ import cucumber.api.java.After;
 			
 		agreeTerm term=new agreeTerm(driver);
 		
-		PageFactory.initElements(driver, term);
+		//PageFactory.initElements(driver, term);
 		
 		term.agreeTerm1();
-		
-		//eTest.log(LogStatus.INFO, "click on the term and condition button");
 			
 		}
 		
@@ -184,11 +151,9 @@ import cucumber.api.java.After;
 			
 		Payment payment1=new Payment(driver);
 		
-		PageFactory.initElements(driver, payment1);
+		//PageFactory.initElements(driver, payment1);
 		
 		payment1.payment();
-		
-		//eTest.log(LogStatus.INFO, "Click on the payment option");
 		
 		Thread.sleep(10000);
 		
@@ -203,24 +168,19 @@ import cucumber.api.java.After;
 			
 		ConfirmationOrder confirm1=new ConfirmationOrder(driver);
 		
-		PageFactory.initElements(driver, confirm1);
+		//PageFactory.initElements(driver, confirm1);
 		
 		confirm1.confirm();
-		
-		//eTest.log(LogStatus.INFO, "Confirm the order");
 		
 		Thread.sleep(10000);
 			
 		}
-		
-		
 		
 		@After("@Login")
 		public void closingBrowser() {
 			
 		driver.quit();
 		
-		//eTest.log(LogStatus.INFO, "Successfully close the browser");
 		}
 		
 	}
