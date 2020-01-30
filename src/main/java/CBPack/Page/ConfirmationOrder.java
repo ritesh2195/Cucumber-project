@@ -1,8 +1,8 @@
  package CBPack.Page;
 
 	import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+        import org.openqa.selenium.WebElement;
+        import org.openqa.selenium.support.FindBy;
 	
 	public class ConfirmationOrder {
 		
@@ -15,7 +15,7 @@ import org.openqa.selenium.support.FindBy;
 	
 	this.driver=driver;	
 		
-	//PageFactory.initElements(driver, this);
+	PageFactory.initElements(driver, this);
 	
 	}
 	
