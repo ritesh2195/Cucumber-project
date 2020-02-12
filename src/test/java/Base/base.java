@@ -40,9 +40,9 @@
 		
 	if(prop.getProperty("browserType").equalsIgnoreCase("chrome")) {
 		
-    System.setProperty("webdriver.chrome.driver", "drivers//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers//chromedriver.exe");
 	    
-    driver=new ChromeDriver();	
+        driver=new ChromeDriver();	
 		
 	} else if(prop.getProperty("broswerType").equalsIgnoreCase("firefox")){
 	
