@@ -4,6 +4,8 @@
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.ui.Select;
+        import org.openqa.selenium.support.ui.ExpectedConditions;
+	import org.openqa.selenium.support.ui.WebDriverWait;
 	
 	public class addToCart {
 		
@@ -32,7 +34,7 @@
 	
 	}
 	
-	public void addCart() throws InterruptedException {
+	public void addCart() {
 		
 	qualityWanted.clear();
 	
@@ -46,7 +48,9 @@
 	
 	addToCart.click();
 	
-	Thread.sleep(1000);
+	WebDriverWait wait=new WebDriverWait(driver, 20);
+    
+   	wait.until(ExpectedConditions.elementToBeClickable(ProceedToCheckout));
 	
 	ProceedToCheckout.click();
 	
